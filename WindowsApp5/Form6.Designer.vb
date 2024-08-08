@@ -22,7 +22,6 @@ Partial Class Form6
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -40,18 +39,10 @@ Partial Class Form6
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button6.Location = New System.Drawing.Point(1034, 27)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(73, 40)
-        Me.Button6.TabIndex = 47
-        Me.Button6.UseVisualStyleBackColor = False
         '
         'Button5
         '
@@ -259,6 +250,15 @@ Partial Class Form6
         Me.CheckBox1.Text = "Corolla"
         Me.CheckBox1.UseVisualStyleBackColor = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox1.Location = New System.Drawing.Point(1028, 32)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(85, 34)
+        Me.PictureBox1.TabIndex = 58
+        Me.PictureBox1.TabStop = False
+        '
         'Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -266,6 +266,7 @@ Partial Class Form6
         Me.BackgroundImage = Global.WindowsApp5.My.Resources.Resources._6
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1282, 688)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.CheckBox10)
         Me.Controls.Add(Me.CheckBox9)
         Me.Controls.Add(Me.CheckBox8)
@@ -276,7 +277,6 @@ Partial Class Form6
         Me.Controls.Add(Me.CheckBox3)
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -287,12 +287,11 @@ Partial Class Form6
         Me.Name = "Form6"
         Me.Text = "Form6"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Button6 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
@@ -310,4 +309,5 @@ Partial Class Form6
     Friend WithEvents CheckBox3 As CheckBox
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
