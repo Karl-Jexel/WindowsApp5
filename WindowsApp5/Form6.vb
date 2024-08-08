@@ -10,21 +10,17 @@ Public Class Form6
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim selectedCarIDs As New List(Of Integer)
 
-        If CheckBox1.Checked Then selectedCarIDs.Add(1)
-        If CheckBox2.Checked Then selectedCarIDs.Add(2)
-        If CheckBox3.Checked Then selectedCarIDs.Add(3)
-        If CheckBox4.Checked Then selectedCarIDs.Add(4)
-        If CheckBox5.Checked Then selectedCarIDs.Add(5)
-        If CheckBox6.Checked Then selectedCarIDs.Add(6)
-        If CheckBox7.Checked Then selectedCarIDs.Add(7)
-        If CheckBox8.Checked Then selectedCarIDs.Add(8)
-        If CheckBox9.Checked Then selectedCarIDs.Add(9)
-        If CheckBox10.Checked Then selectedCarIDs.Add(10)
+        For i As Integer = 1 To 10
+            Dim checkbox As CheckBox = CType(Me.Controls("CheckBox" & i.ToString()), CheckBox)
+            If checkbox.Checked Then
+                selectedCarIDs.Add(i)
+            End If
+        Next
 
-        Dim form8 As New Form8()
-        form8.SelectedCarIDs = selectedCarIDs
-        form8.Show()
+        Dim bago As New Form8()
+        bago.Show()
         Me.Hide()
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

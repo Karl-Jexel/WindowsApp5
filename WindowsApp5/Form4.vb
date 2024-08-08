@@ -16,4 +16,8 @@
             MessageBox.Show("Wrong pass", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
+
+    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
